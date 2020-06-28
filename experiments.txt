@@ -1,0 +1,54 @@
+## FB15k-237
+
+python main.py \
+    --dataset FB15k-237 \
+    --epochs 500 \
+    --lr 0.0005 --decay_rate 1.0 \
+    --de 200 --dr 200 --k 100 \
+    --d_in 0.3 --d_h1 0.4 --d_h2 0.5 --label_smoothing 0.1 \
+    --per_gpu_train_batch_size 128 \
+    --per_gpu_eval_batch_size 128 \
+    --eval_epoch 10 \
+    --reverse
+
+
+## FB15k
+
+python main.py \
+    --dataset FB15k \
+    --epochs 500 \
+    --lr 0.003 --decay_rate 0.99 \
+    --de 300 --dr 30 --k 50 \
+    --d_in 0.2 --d_h1 0.2 --d_h2 0.3 --label_smoothing 0. \
+    --per_gpu_train_batch_size 128 \
+    --per_gpu_eval_batch_size 128 \
+    --eval_epoch 10 \
+    --reverse
+
+
+## WN18RR
+
+python main.py \
+    --dataset WN18RR \
+    --epochs 500 \
+    --lr 0.003 --decay_rate 1.0 \
+    --de 200 --dr 30 --k 30 \
+    --d_in 0.2 --d_h1 0.2 --d_h2 0.3 --label_smoothing 0.1 \
+    --per_gpu_train_batch_size 128 \
+    --per_gpu_eval_batch_size 128 \
+    --eval_epoch 10 \
+    --reverse
+
+
+## WN18
+
+python main.py \
+    --dataset WN18 \
+    --epochs 500 \
+    --lr 0.005 --decay_rate 0.995 \
+    --de 200 --dr 30 --k 10 \
+    --d_in 0.2 --d_h1 0.1 --d_h2 0.2 --label_smoothing 0.1 \
+    --per_gpu_train_batch_size 128 \
+    --per_gpu_eval_batch_size 128 \
+    --eval_epoch 10 \
+    --reverse
