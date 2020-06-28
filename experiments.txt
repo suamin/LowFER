@@ -1,0 +1,18 @@
+## To run on WN18RR
+
+python main.py --dataset WN18RR --num_iterations 500 --batch_size 128 --lr 0.003 --dr 1.0 --edim 200 --rdim 30 --input_dropout 0.2 --hidden_dropout1 0.2 --hidden_dropout2 0.3 --label_smoothing 0.1 --k 30
+
+
+## To run on WN18
+
+python main.py --dataset WN18 --num_iterations 500 --batch_size 128 --lr 0.005 --dr 0.995 --edim 200 --rdim 30 --input_dropout 0.2 --hidden_dropout1 0.1 --hidden_dropout2 0.2 --label_smoothing 0.1 --k 10
+
+
+## To run on FB15k-237
+
+python main.py --dataset FB15k-237 --num_iterations 500 --batch_size 128 --lr 0.0005 --dr 1.0 --edim 200 --rdim 200 --input_dropout 0.3 --hidden_dropout1 0.4 --hidden_dropout2 0.5 --label_smoothing 0.1 --k 100
+
+
+## To run on FB15k
+
+python main.py --dataset FB15k --num_iterations 500 --batch_size 128 --lr 0.003 --dr 0.99 --edim 300 --rdim 30 --input_dropout 0.2 --hidden_dropout1 0.2 --hidden_dropout2 0.3 --label_smoothing 0. --k 50
