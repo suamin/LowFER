@@ -24,3 +24,15 @@ Run the scripts from main directory as `python -m scripts.filename`:
 `plots.py`: Simple plots script used to generate effect of `k` and `de`.
 
 **Update**: A refactored version of the code can be found on the `refactor` branch with faster evaluation. The results there are slightly less (in 3rd decimal) than this implementation.
+
+### Citation
+```
+@inproceedings{amin2020lowfer,
+  title={LowFER: Low-rank Bilinear Pooling for Link Prediction},
+  author={Amin, Saadullah and Varanasi, Stalin and Dunfield, Katherine Ann and Neumann, G{\"u}nter},
+  booktitle={International Conference on Machine Learning},
+  pages={257--268},
+  year={2020},
+  organization={PMLR}
+}
+```
