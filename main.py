@@ -182,11 +182,13 @@ class Experiment:
                     logger.info("Validation:")
                     valid_metrics = self.evaluate(model, d.valid_data)
                     torch.save(model.state_dict(), self.output_dir + "/%d.pt" % it)
-        logger.info("Final Validation:")
-        valid_metrics = self.evaluate(model, d.valid_data)
-        logger.info("Final Test:")
-        test_metrics = self.evaluate(model, d.test_data)
-        torch.save(model.state_dict(), self.output_dir + "/final.pt")
+
+        with torch.no_grad():
+            logger.info("Final Validation:")
+            valid_metrics = self.evaluate(model, d.valid_data)
+            logger.info("Final Test:")
+            test_metrics = self.evaluate(model, d.test_data)
+            torch.save(model.state_dict(), self.output_dir + "/final.pt")
 
 
 if __name__ == '__main__':
