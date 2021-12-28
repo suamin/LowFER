@@ -121,3 +121,6 @@ dmypy.json
 /outputs
 /log
 /output
+
+# JetBrains IDE
+.idea/
