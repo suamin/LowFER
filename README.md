@@ -1,18 +1,22 @@
 ## LowFER
+
 Code for the paper "LowFER: Low-rank Bilinear Pooling for Link Prediction", ICML 2020
 
 **NOTE**: The code is based on the open-source code released by TuckER. Please refer to [this](https://github.com/ibalazevic/TuckER) link for the original code and citing their work.
 
 ### Experiments
+
 See `experiments.txt` for the commands to run the model with best hyperparameters.
 
 ### Requirements
+
 The original codebase was implemented in Python 3.6.6. Required packages are:
 
     numpy      1.15.1
     pytorch    1.0.1
 
 ### Scripts
+
 Run the scripts from main directory as `python -m scripts.filename`:
 
 `toy_example.py`: This script contains the toy dataset used to visualize the Proposition 1 in paper. It runs LowFER under the conditions specified and shows that it perfectly separates positive examples from negative examples.
@@ -40,7 +44,7 @@ If you find our work useful, please consider citing:
 }
 ```
 
-Please also consider checking our related work extending LowFER with time-aware and model-agnostic temporal representations for TKGC and the accompanying temporal KGEs framework [ChronoKGE](https://github.com/iodike/ChronoKGE):
+**Update (07/04/2022)**: Please check our follow-up work extending LowFER with time-aware and model-agnostic temporal representations for TKGC and the accompanying temporal knowledge graph embeddings framework [ChronoKGE](https://github.com/iodike/ChronoKGE):
 
 ```bibtex
 @inproceedings{dikeoulias-etal-2022-tlowfer,
