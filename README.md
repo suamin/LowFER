@@ -29,7 +29,7 @@ Run the scripts from main directory as `python -m scripts.filename`:
 
 **Update**: A refactored version of the code can be found on the `refactor` branch with faster evaluation. The results there are slightly less (in 3rd decimal) than this implementation.
 
-# Citation
+## Citation
 
 If you find our work useful, please consider citing:
 
