@@ -26,7 +26,10 @@ Run the scripts from main directory as `python -m scripts.filename`:
 **Update**: A refactored version of the code can be found on the `refactor` branch with faster evaluation. The results there are slightly less (in 3rd decimal) than this implementation.
 
 ### Citation
-```
+
+If you find our work useful, please consider citing:
+
+```bibtex
 @inproceedings{amin2020lowfer,
   title={LowFER: Low-rank Bilinear Pooling for Link Prediction},
   author={Amin, Saadullah and Varanasi, Stalin and Dunfield, Katherine Ann and Neumann, G{\"u}nter},
@@ -34,5 +37,21 @@ Run the scripts from main directory as `python -m scripts.filename`:
   pages={257--268},
   year={2020},
   organization={PMLR}
+}
+```
+
+Please also consider checking our related work extending LowFER with time-aware and model-agnostic temporal representations for TKGC and the accompanying temporal KGEs framework [ChronoKGE](https://github.com/iodike/ChronoKGE):
+
+```bibtex
+@inproceedings{dikeoulias-etal-2022-tlowfer,
+    title = "Temporal Knowledge Graph Reasoning with Low-rank and Model-agnostic Representations",
+    author = "Dikeoulias, Ioannis and
+    Amin, Saadullah and 
+    Neumann, Günter",
+    booktitle = "Proceedings of the 7th Workshop on Representation Learning for NLP",
+    month = may,
+    year = "2022",
+    address = "Online",
+    publisher = "Association for Computational Linguistics"
 }
 ```
